@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/write_the_name_of_the_geometric_figure_that_you_see"
+                android:layout_gravity="center"
+                android:textSize="10pt"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textColor="@color/dot_dark_screen2"/>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="@color/dot_light_screen3"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_circle"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/circle"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_question_circle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_circle"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/ci_l"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_circle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_circle"
+                        android:layout_toRightOf="@id/iv_circle"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="@color/bg_screen2"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_square"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/square"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_question_square"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_square"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/q_a_r"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_square"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_square"
+                        android:layout_toRightOf="@id/iv_square"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="@color/bg_screen3"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_cross"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/cross"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_question_cross"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_cross"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/c_s"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_cross"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_cross"
+                        android:layout_toRightOf="@id/iv_cross"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="@color/dot_light_screen2"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_triangle"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/triangle"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_question_triangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_triangle"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/t_r_a_l_e"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_triangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_triangle"
+                        android:layout_toRightOf="@id/iv_triangle"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="@color/colorPrimaryDark"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_heart"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/heart"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_question_heart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_heart"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/h_a_t"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_heart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_heart"
+                        android:layout_toRightOf="@id/iv_heart"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="#82E0AA"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_hexagon"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/hexagon"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_question_hexagon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_hexagon"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/h_x_a_o"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_hexagon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_hexagon"
+                        android:layout_toRightOf="@id/iv_hexagon"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="#85C1E9"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_oval"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/oval"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_question_oval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_oval"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/o_l"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_oval"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_oval"
+                        android:layout_toRightOf="@id/iv_oval"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="@color/dot_light_screen1"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_pentagon"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/pentagon"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_question_pentagon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_pentagon"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/p_n_g_n"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_pentagon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_pentagon"
+                        android:layout_toRightOf="@id/iv_pentagon"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="@color/dot_light_screen4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_diamond"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/diamond"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:id="@+id/tv_question_diamond"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_diamond"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/i_m_o_d"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/et_diamond"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_diamond"
+                        android:layout_toRightOf="@id/iv_diamond"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        android:maxLength="11"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="@color/colorPrimary"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_arrow"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/arrow"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:id="@+id/tv_question_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_arrow"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/a_r_o"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_arrow"
+                        android:layout_toRightOf="@id/iv_arrow"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="@color/dot_light_screen3"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_star"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/star"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:id="@+id/tv_question_star"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_star"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/s_a"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/et_star"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_star"
+                        android:layout_toRightOf="@id/iv_star"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="14dp"
+                card_view:cardBackgroundColor="@color/dot_light_screen3"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_rectangle"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/rectangle"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_question_rectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_rectangle"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/r_c_t_g_e"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/et_rectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_question_rectangle"
+                        android:layout_toRightOf="@id/iv_rectangle"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        />
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+            <Button
+                android:id="@+id/bt_verificar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/verificar"
+                android:gravity="center"
+                android:textColor="@color/enable"
+                android:textSize="15dp"
+                android:background="@drawable/button_login_form"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

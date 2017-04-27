@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+
+
+    <item android:id="@+id/nav_slideshow"
+        android:icon="@android:drawable/ic_menu_slideshow"
+        android:title="@string/learning_with_songs"
+        />
+
+    </group>
+    <item android:title="@string/comunicate">
+        <menu>
+            <item android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="@string/share">
+            </item>
+            <item android:id="@+id/nav_send"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="@string/Preferences">
+            </item>
+        </menu>
+
+    </item>
+    <item android:id="@+id/nav_instructions"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="instructions"
+        />
+
+    <item android:id="@+id/nav_logro"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Tablero Logros"
+        />
+
+
+    <item android:id="@+id/nav_about"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="About"
+        />
+    <item android:id="@+id/nav_exit"
+        android:icon="@android:drawable/ic_delete"
+        android:title="Exit"
+        />
+
+</menu>

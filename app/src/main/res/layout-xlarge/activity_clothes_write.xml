@@ -1,0 +1,486 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/write_the_name_of_the_clothes"
+                android:layout_gravity="center"
+                android:textSize="10pt"
+                android:textColor="#E74C3C"/>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="#76D7C4"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_cap"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/cap"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_cap"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/cap"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_cap"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_1"
+                        android:layout_toRightOf="@id/iv_cap"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        android:maxLength="3"/>
+
+                    <Button
+                        android:id="@+id/bt_cap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verificar"
+                        android:layout_below="@id/et_cap"
+                        android:layout_toRightOf="@id/iv_cap"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="#F8C471"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_t_shirt"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/t_shirt"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_t_shirt"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/t_shirt"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_t_shirt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_2"
+                        android:layout_toRightOf="@id/iv_t_shirt"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        android:maxLength="7"/>
+
+                    <Button
+                        android:id="@+id/bt_t_shirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verificar"
+                        android:layout_below="@id/et_t_shirt"
+                        android:layout_toRightOf="@id/iv_t_shirt"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="#BB8FCE"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_shoes"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/shoes"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_shoes"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/shoes"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_shoes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_3"
+                        android:layout_toRightOf="@id/iv_shoes"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        android:maxLength="5"/>
+
+                    <Button
+                        android:id="@+id/bt_shoes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verificar"
+                        android:layout_below="@id/et_shoes"
+                        android:layout_toRightOf="@id/iv_shoes"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="#F0B27A"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_sweater_w"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/sweater"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:id="@+id/tv_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_sweater_w"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/sweater"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_sweater"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_4"
+                        android:layout_toRightOf="@id/iv_sweater_w"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        android:maxLength="6"/>
+
+                    <Button
+                        android:id="@+id/bt_sweater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verificar"
+                        android:layout_below="@id/et_sweater"
+                        android:layout_toRightOf="@id/iv_sweater_w"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="#F1948A"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_bikini"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/bikini"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:id="@+id/tv_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_bikini"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/b_i"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_bikini"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_5"
+                        android:layout_toRightOf="@id/iv_bikini"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        android:maxLength="6"/>
+
+                    <Button
+                        android:id="@+id/bt_bikini"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verificar"
+                        android:layout_below="@id/et_bikini"
+                        android:layout_toRightOf="@id/iv_bikini"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="#82E0AA"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_shorts_w"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/shorts"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:id="@+id/tv_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_shorts_w"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/s_s"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_shorts"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_6"
+                        android:layout_toRightOf="@id/iv_shorts_w"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        android:maxLength="6"/>
+
+                    <Button
+                        android:id="@+id/bt_shorts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verificar"
+                        android:layout_below="@id/et_shorts"
+                        android:layout_toRightOf="@id/iv_shorts_w"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="#85C1E9"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_jacket"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/jacket"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:id="@+id/tv_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_jacket"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/j_t"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_jacket"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_7"
+                        android:layout_toRightOf="@id/iv_jacket"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        android:maxLength="6"/>
+
+                    <Button
+                        android:id="@+id/bt_jacket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verificar"
+                        android:layout_below="@id/et_jacket"
+                        android:layout_toRightOf="@id/iv_jacket"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardBackgroundColor="#58D68D"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_socks"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/socks"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:id="@+id/tv_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_socks"
+                        android:layout_marginTop="15dp"
+                        android:textSize="10pt"
+                        android:text="@string/s_k"
+                        android:paddingLeft="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/et_socks"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_8"
+                        android:layout_toRightOf="@id/iv_socks"
+                        android:layout_marginTop="25dp"
+                        android:inputType="text"
+                        android:maxLength="5"/>
+
+                    <Button
+                        android:id="@+id/bt_socks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/verificar"
+                        android:layout_below="@id/et_socks"
+                        android:layout_toRightOf="@id/iv_socks"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
